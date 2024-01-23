@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Personal Website</title>
+  <link href="projects.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="GitHubList.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Megan Nguy</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- <section class="navbar">
+    <div class="topnav">
+      <a class="nav-individual" href="index.html">Megan Nguy</a>
+      <a class="nav-individual" href="projects.html">Projects</a>
+      <a class="nav-individual" href="resume.html">Resume</a>
+    </div>
+  </section> -->
+  <h1 class="title">Here are all my projects that can be found on <a href="https://github.com/megan-jn">GitHub</a>.</h1>
+
+  <div id="repos" class="repocontent">
+    <!-- <div style="text-align: center;">
+      <a href="https://github.com/megan-jn?tab=repositories">github
+      </a>
+    </div> -->
+  </div>
+
+  <script>
+    listrepos("megan-jn", document.getElementById("repos"), showProfile=true, showPagesHome=true).then(reposcount => {
+      // In this section, variable reposcount stores the total number of Repositories.
+    });
+  </script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <!-- <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script> -->
+</body>
+
+</html>
