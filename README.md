@@ -1,1 +1,1 @@
-# this contains code for my personal website
+# check out my website [here](https://megan-jn.github.io/)!
